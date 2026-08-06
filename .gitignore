@@ -1,5 +1,25 @@
-# Ignore temporary files
-*.pyc
+# Data — Kaggle competition data, not redistributed. See data/README.md.
+data/*
+!data/README.md
+
+# Never commit datasets or compiled binaries
+*.csv
+*.so
+*.pkl
+*.parquet
+
+# Kaggle competition API artefacts — these do not belong in a portfolio repo
+competition.cpython-*.so
+public_timeseries_testing_util.py
+
+# Python
 __pycache__/
+*.py[cod]
+venv/
+.venv/
+
+# Jupyter
 .ipynb_checkpoints/
+
+# macOS
 .DS_Store
